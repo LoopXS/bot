@@ -116,7 +116,7 @@ async def ekekdhdb(e):
 @callback("tlans")
 async def tlans(event):
     await event.delete()
-    await asst.send_message(event.chat_id, "✨ How To Use :\n\n𝟏 ~ `/tr LangaugeCode Text`\n𝟐 ~ `/tr Language` Reply To A Message\n\nHere Is The List Of [Languages](https://telegra.ph/CɪᴘʜᴇʀX-03-10)", link_preview=False)
+    await asst.send_message(event.chat_id, "✨ How To Use :\n\n𝟏 ~ `/tr LangaugeCode Text`\n𝟐 ~ `/tr Language` Reply To A Message\n\nHere Is The List Of [Languages](https://telegra.ph/𝒉𝒆𝒂𝒓𝒕𝒍𝒆𝒔𝒔-11-09)", link_preview=False)
 
     
 @callback("list")
