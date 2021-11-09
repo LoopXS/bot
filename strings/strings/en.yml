@@ -131,7 +131,7 @@ tagnot_1: "{} tagged you in {}\n\n```{}```\n\n[📨Message📨]({})"
 tagnot_2: "{} tagged you in {}\n\n [📨Message📨]({})"
 
 # whisper
-wspr_1: "@{} CɪᴘʜᴇʀX Ⲋⲉⲥʀⲉⲧ ⲙⲉⲋⲋⲁⳋⲉ ϝⲟʀ ⲩⲟυ.\n\nᴅᴇʟᴇᴛᴇ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ᴀғᴛᴇʀ ʀᴇᴀᴅɪɴɢ.\n\n✨CɪᴘʜᴇʀX ⲃⲟⲧ Ⲉⲭⲥⳑυⲋⲓⳳⲉ✨"
+wspr_1: "@{} Ⲏⲉⲁʀⲧⳑⲉⲋⲋ Ⲋⲉⲥʀⲉⲧ ⲙⲉⲋⲋⲁⳋⲉ ϝⲟʀ ⲩⲟυ !\n\nᴅᴇʟᴇᴛᴇ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ᴀғᴛᴇʀ ʀᴇᴀᴅɪɴɢ.\n\n✨ Ⲏⲉⲁʀⲧⳑⲉⲋⲋ Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ ✨"
 wspr_2: "Mᴇssᴀgᴇ dᴇlᴇᴛᴇd"
 wspr_3: "Add some id or username too"
 wspr_4: "User {} Not Found\nSearch Again"
@@ -355,7 +355,7 @@ nightm_5: "Something Went Wrong"
 
 # pmpermit
 pmperm_1: "Please wait till I approve you to pm. Never mind spamming inbox cause you'll get blocked and reported by Telegram instantly!"
-pmperm_2: "`You were spamming 𝒉𝒆𝒂𝒓𝒕𝒍𝒆𝒔𝒔 inbox, which I didn't like 😒`\n`You've been Blocked and reported to Telegram.`"
+pmperm_2: "You Were Spamming 𝒉𝒆𝒂𝒓𝒕𝒍𝒆𝒔𝒔 Inbox\nWhich I didn't like 😒\nYou've Been Blocked & Reported !"
 pmperm_3: "Reply to someone's message or try this commmand in private."
 
 # schedule_msg
