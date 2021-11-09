@@ -66,7 +66,7 @@ async def _(event):
     try:
         tt = translator.translate(text, lang_tgt=lan)
         fr = translator.detect(text)
-        output_str = f"**Ⲧʀⲁⲛⲋⳑⲁⲧⲉⲇ ⲃⲩ CɪᴘʜᴇʀX Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ**\n\n**Ⲋⲟυʀⲥⲉ ({fr})**:\n`{text}`\n\n**Ⲧʀⲁⲛⲋⳑⲁⲧⲓⲟⲛ ({lan})**:\n`{tt}`"
+        output_str = f"**Ⲧʀⲁⲛⲋⳑⲁⲧⲉⲇ ⲃⲩ Ⲏⲉⲁʀⲧⳑⲉⲋⲋ Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ**\n\n**Ⲋⲟυʀⲥⲉ ({fr})**:\n`{text}`\n\n**Ⲧʀⲁⲛⲋⳑⲁⲧⲓⲟⲛ ({lan})**:\n`{tt}`"
         if len(output_str) >= 4096:
             url = "https://del.dog/documents"
             r = requests.post(url, data=output_str.encode("UTF-8")).json()
