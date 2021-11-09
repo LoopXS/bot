@@ -5,8 +5,8 @@
    create button u can reply to pic also
 
 Format:- `{i}button Hey There! @UseUltroid 😎.
-[CɪᴘʜᴇʀX Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ | t.me/CipherXBot][Support | t.me/FutureTechnologyOfficial | same]
-[CɪᴘʜᴇʀX Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ | t.me/CipherXBot]`
+[Ⲏⲉⲁʀⲧⳑⲉⲋⲋ Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ | t.me/DarkPentester][Support | t.me/DarkPentesterBot | same]
+[Ⲏⲉⲁʀⲧⳑⲉⲋⲋ Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ | t.me/DarkPentester]`
 """
 
 from cython.functions.tools import create_tl_btn, get_msg_button
