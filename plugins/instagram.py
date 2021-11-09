@@ -131,7 +131,7 @@ async def insta_karbon(event):
     caption = (
         event.pattern_match.group(2)
         or replied.message
-        or "Telegram To Instagram Upload\nBy CɪᴘʜᴇʀX Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ"
+        or "Telegram To Instagram Upload\nBy 𐋏ᥱᥲrᴛᥣᥱss E᥊ᥴᥣᥙsi᥎ᥱ B᧐ᴛ"
     )
     if not (replied and (replied.photo or replied.video)):
         return await eor(event, "`Reply to Photo Or Video...`")
