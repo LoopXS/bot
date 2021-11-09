@@ -335,6 +335,6 @@ async def _(event):
             await conv.send_message("/fedinfo " + sysarg)
             audio = await conv.get_response()
             await event.client.send_read_acknowledge(bot)
-            await ok.edit(audio.text + "\n\nFedInfo Extracted by CɪᴘʜᴇʀX Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ")
+            await ok.edit(audio.text + "\n\nFedInfo Extracted by 𐋏ᥱᥲrᴛᥣᥱss E᥊ᥴᥣᥙsi᥎ᥱ B᧐ᴛ")
         except YouBlockedUserError:
             await ok.edit("**Error**\n `Unblock` @MissRose_Bot `and try again!")
