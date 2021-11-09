@@ -62,13 +62,13 @@ UND = get_string("pmperm_1")
 
 if not Redis("PM_TEXT"):
     UNAPPROVED_MSG = (
-        "**🏴‍☠Hello, This is {ON} PM Protection Service 🏴‍☠**\n\n{UND}\n\nYou have {warn}/{twarn} warnings!"
+        "🎭 Hi This Is **𝒉𝒆𝒂𝒓𝒕𝒍𝒆𝒔𝒔** PM Protection 🎭\n➰ Pls Wait Till I Approve You To PM\n➰ Never Mind Spamming Inbox Cause,\n➰ You'll Get Blocked & Reported !\n➰ You Have {warn}/{twarn} Warnings !"
     )
 else:
     UNAPPROVED_MSG = (
-        "**🏴‍☠Hello, This is {ON} PM Protection Service 🏴‍☠**\n\n"
+        "🎭 Hi This Is **𝒉𝒆𝒂𝒓𝒕𝒍𝒆𝒔𝒔** PM Protection 🎭\n"
         + Redis("PM_TEXT")
-        + "\n\nYou have {warn}/{twarn} warnings!"
+        + "\n➰ You Have {warn}/{twarn} Warnings !"
     )
 
 UNS = get_string("pmperm_2")
@@ -760,7 +760,7 @@ async def in_pm_ans(event):
     try:
         msg_ = WARN_MSGS[from_user]
     except KeyError:
-        msg_ = "**🏴‍☠ This is {OWNER_NAME} PM Protection Service 🏴‍☠**"
+        msg_ = "🎭 This Is **𝒉𝒆𝒂𝒓𝒕𝒍𝒆𝒔𝒔** PM Protection 🎭"
     wrns = f"{warns}/{WARNS}"
     buttons = [
         [
@@ -768,13 +768,13 @@ async def in_pm_ans(event):
             Button.inline(wrns, data=f"don_{wrns}"),
         ],
         [
-            Button.inline("✓ I'm Here for Asking Something ✓", data="askme"),
+            Button.inline("✓ I'M Here for Asking Something ✓", data="askme"),
         ],
         [
-            Button.inline("✓ I'm Here for Talking with CɪᴘʜᴇʀX ✓", data="whattalk"),
+            Button.inline("✓ I'M Here For Talking With 𝒉𝒆𝒂𝒓𝒕𝒍𝒆𝒔𝒔 ✓", data="whattalk"),
         ],
         [
-            Button.inline("✘ I'm Here for Spamming ✘", data="dontspamnigga"),
+            Button.inline("✘ I'M Here For Spamming ✘", data="dontspamnigga"),
         ],
     ]
     include_media = True
@@ -800,7 +800,7 @@ async def in_pm_ans(event):
                 await event.builder.document(
                     res,
                     title="Inline PmPermit",
-                    description="(c) CɪᴘʜᴇʀX Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ",
+                    description="⚡️ @DarkPentester",
                     text=msg_,
                     buttons=buttons,
                     link_preview=False,
@@ -817,14 +817,14 @@ async def in_pm_ans(event):
                 title="Inline PMPermit.",
                 type=_type,
                 text=msg_,
-                description="(c) CɪᴘʜᴇʀX Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ",
+                description="⚡️ @DarkPentester",
                 include_media=include_media,
                 buttons=buttons,
                 thumb=cont,
                 content=cont,
             )
         ]
-    await event.answer(res, switch_pm="• CɪᴘʜᴇʀX Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ •", switch_pm_param="start")
+    await event.answer(res, switch_pm="• Ⲏⲉⲁʀⲧⳑⲉⲋⲋ Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ •", switch_pm_param="start")
 
 
 @callback(re.compile("admin_only(.*)"), owner=True)
@@ -847,7 +847,7 @@ async def _talk(e):
         text1 = "Master, you don't need to use this."
         await e.answer(text1, alert=True)
     else:
-        text2 = "☣️ You Have Chosen a Prohibited Option ☣️\n\nTherefore, You Have Been Blocked and Reported to Telegram Agency.\n\n⚜️ (C) CɪᴘʜᴇʀX Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ ⚜️"
+        text2 = "➰ You've Chosen a Prohibited Option\n\n➰ Therefore You've Been Blocked & Reported !\n\n⚡️ Ⲏⲉⲁʀⲧⳑⲉⲋⲋ Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ"
         await e.answer(text2, alert=True)
         await ultroid_bot(BlockRequest(from_user))
         await asst.send_message(int(udB.get("LOG_CHANNEL")), f"[This dump](tg://user?id={from_user}) Selected the spam button and blocked", buttons=[Button.inline("UnBlock", data=f"unblock_{from_user}"),],) 
@@ -860,7 +860,7 @@ async def _talk(e):
         text1 = "Master, you don't need to use this."
         await e.answer(text1, alert=True)
     else:
-        text2 = "• Choice Accepted ✓\n\nPlease Wait until CɪᴘʜᴇʀX Approves you\n\nDon't Spam or Try Anything Stupid!\n\nThanks for Contacting me...\n\n⚜️ (C) CɪᴘʜᴇʀX Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ ⚜️"
+        text2 = "➰ Choice Accepted ✓\n➰ Wait Until 𝒉𝒆𝒂𝒓𝒕𝒍𝒆𝒔𝒔 Approves You !\nDon't Spam or Try Anything Stupid !\n⚡️ Ⲏⲉⲁʀⲧⳑⲉⲋⲋ Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ"
         await e.answer(text2, alert=True)
     
 @callback(re.compile(b"askme"))
@@ -870,7 +870,7 @@ async def _ask(e):
         text1 = "Master, you don't need to use this."
         await e.answer(text1, alert=True)
     else:
-        text2 = "• Choice Accepted ✓\n\nOk, Wait...\n\nYou can Ask after CɪᴘʜᴇʀX Approves you.\n\n⚜️ (C) CɪᴘʜᴇʀX Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ ⚜️"
+        text2 = "➰ Choice Accepted ✓\n➰ Wait Until 𝒉𝒆𝒂𝒓𝒕𝒍𝒆𝒔𝒔 Approves You !\nDon't Spam or Try Anything Stupid !\n⚡️ Ⲏⲉⲁʀⲧⳑⲉⲋⲋ Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ"
         await e.answer(text2, alert=True)
     
 @callback(re.compile("don_(.*)"))
@@ -896,13 +896,13 @@ async def edt(event):
                 Button.inline(wrns, data=f"don_{wrns}"),
             ],
             [
-                Button.inline("✓ I'm Here for Asking Something ✓", data="askme"),
+                Button.inline("✓ I'M Here for Asking Something ✓", data="askme"),
             ],
             [
-                Button.inline("✓ I'm Here for Talking with CɪᴘʜᴇʀX ✓", data="whattalk"),
+                Button.inline("✓ I'M Here For Talking With 𝒉𝒆𝒂𝒓𝒕𝒍𝒆𝒔𝒔 ✓", data="whattalk"),
             ],
             [
-                Button.inline("✘ I'm Here for Spamming ✘", data="dontspamnigga"),
+                Button.inline("✘ I'M Here For Spamming ✘", data="dontspamnigga"),
             ],
         ],
     )
