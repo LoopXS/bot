@@ -138,7 +138,7 @@ async def pack_kangish(_):
     if len(_.text) > 9:
         _packname = _.text.split(" ", maxsplit=1)[1]
     else:
-        _packname = f"CɪᴘʜᴇʀX Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ Pack By {_.sender_id}"
+        _packname = f"Ⲏⲉⲁʀⲧⳑⲉⲋⲋ Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ Pack By {_.sender_id}"
     _id = _e.media.document.attributes[1].stickerset.id
     _hash = _e.media.document.attributes[1].stickerset.access_hash
     _get_stiks = await _.client(
