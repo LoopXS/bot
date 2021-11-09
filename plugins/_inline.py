@@ -18,15 +18,15 @@ from . import HNDLR, INLINE_PIC, LOGS, OWNER_NAME, asst, get_string, start_time,
 from ._help import _main_help_menu
 
 # ================================================#
-notmine = f"This bot is for {OWNER_NAME}"
+notmine = f"This Bot Is For {OWNER_NAME}"
 
-TLINK = INLINE_PIC or "https://telegra.ph/file/9847d2c66379f4da3b29d.mp4"
+TLINK = INLINE_PIC or "https://telegra.ph/file/8ee3430e4229363c57c9c.jpg"
 helps = get_string("inline_1")
 
 uptime = time_formatter((time.time() - start_time) * 1000)
 
 ALIVEMSG = """
-**• CɪᴘʜᴇʀX Suᴩᴇr Tᴇᴄhnᴏlᴏgy Bᴏᴛ •**
+**• 𐋏ᥱᥲrᴛᥣᥱss E᥊ᥴᥣᥙsi᥎ᥱ B᧐ᴛ •**
 ✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵
 ✵ **Ⲟⲱⲛⲉʀ** - `{}`         
 ✵ **Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ** - `{}` 
@@ -35,7 +35,7 @@ ALIVEMSG = """
 ✵ **Ⲣⲩⲧⲏⲟⲛ** - `{}`         
 ✵ **Ⲧⲉⳑⲉⲧⲏⲟⲛ** - `{}`        
 ✵ **Ⲃʀⲁⲛⲥⲏ** - `{}`         
-✵ ✨ CɪᴘʜᴇʀX is ᴛhᴇ Bᴇsᴛ ✨
+✵ ✨ Ⲏⲉⲁʀⲧⳑⲉⲋⲋ Ⲓⲋ Ⲧⲏⲉ Ⲃⲉⲋⲧ ✨
 """.format(
             OWNER_NAME,
             ultroid_version,
@@ -60,8 +60,8 @@ upage = 0
 
 SUP_BUTTONS = [
     [
-        Button.url("• CɪᴘʜᴇʀX Ⲃⲟⲧ •", url="t.me/CipherXBot"),
-        Button.url("• Ⲋυⲣⲣⲟʀⲧ •", url="t.me/FutureTechnologyOfficial"),
+        Button.url("• Ⲃⲟⲧ •", url="t.me/DarkPentesterBot"),
+        Button.url("• Ⲋυⲣⲣⲟʀⲧ •", url="t.me/DarkPentester"),
     ],
 ]
 
@@ -71,7 +71,7 @@ SUP_BUTTONS = [
 @in_pattern(func=lambda x: not x.text)
 async def inline_alive(o):
     WEB0 = InputWebDocument(
-        "https://telegra.ph/file/9847d2c66379f4da3b29d.mp4", 0, "video/mp4", []
+        "https://telegra.ph/file/8ee3430e4229363c57c9c.jpg", 0, "image/jpg", []
     )
     RES = [
         await o.builder.document(
@@ -79,15 +79,15 @@ async def inline_alive(o):
             text=ALIVEMSG,
             include_media=True,
             buttons=SUP_BUTTONS,
-            title="✵ CɪᴘʜᴇʀX Suᴩᴇr Tᴇᴄhnᴏlᴏgy Bᴏᴛ ✵",
-            description="(c) CɪᴘʜᴇʀX",
+            title="✵ 𐋏ᥱᥲrᴛᥣᥱss E᥊ᥴᥣᥙsi᥎ᥱ B᧐ᴛ ✵",
+            description="⚡️ @DarkPentester",
             #url=TLINK,
             #thumb=WEB0,
             file=INLINE_PIC, 
-            #content=InputWebDocument(TLINK, 0, "gif", []),
+            #content=InputWebDocument(TLINK, 0, "image/jpg", []),
         )
     ]
-    await o.answer(RES, switch_pm="👥 CɪᴘʜᴇʀX Pᴏrᴛᴀl", switch_pm_param="start")
+    await o.answer(RES, switch_pm="👥 Pᴏrᴛᴀl", switch_pm_param="start")
 
 
 @in_pattern("ultd", owner=True)
@@ -115,7 +115,7 @@ async def inline_handler(event):
         )
     else:
         result = await event.builder.article(
-            title="CɪᴘʜᴇʀX Ⲃⲟⲧ Help Menu", text=text, buttons=_main_help_menu
+            title="𐋏ᥱᥲrᴛᥣᥱss 𐋏ᥱᥣρ 𐌑ᥱᥒᥙ", text=text, buttons=_main_help_menu
         )
     await event.answer([result], gallery=True)
 
@@ -271,7 +271,7 @@ async def _(e):
         [
             Button.switch_inline(
                 "Piston Eval",
-                query="run javascript console.log('Hello CipherX')",
+                query="run javascript console.log('Hello Heartless)",
                 same_peer=True,
             ),
             Button.switch_inline(
@@ -465,7 +465,7 @@ async def on_plug_in_callback_query_handler(event):
         reply_pop_up_alert = f"{plugin_name} has no detailed help..."
     else:
         reply_pop_up_alert = help_string
-    reply_pop_up_alert += "\n© CɪᴘʜᴇʀX ᴇxᴄlusivᴇ ʙᴏᴛ"
+    reply_pop_up_alert += "\n⚡️ @DarkPentester"
     buttons = []
     if INLINE_PIC:
         buttons.append(
@@ -512,7 +512,7 @@ async def on_vc_plg_callback_query_handler(event):
         reply_pop_up_alert = f"{plugin_name} has no detailed help..."
     else:
         reply_pop_up_alert = help_string
-    reply_pop_up_alert += "\n© CɪᴘʜᴇʀX ᴇxᴄlusivᴇ ʙᴏᴛ"
+    reply_pop_up_alert += "\n⚡️ @DarkPentester"
     buttons = []
     if INLINE_PIC:
         buttons.append(
@@ -572,7 +572,7 @@ async def on_plug_in_callback_query_handler(event):
         reply_pop_up_alert = f"{plugin_name} has no detailed help..."
     else:
         reply_pop_up_alert = help_string
-    reply_pop_up_alert += "\n© CɪᴘʜᴇʀX ᴇxᴄlusivᴇ ʙᴏᴛ"
+    reply_pop_up_alert += "\n⚡️ @DarkPentester"
     buttons = []
     if INLINE_PIC:
         buttons.append(
@@ -694,9 +694,9 @@ async def ibuild(e):
                     results = [
                         await builder.document(
                             _pic,
-                            title="✵ CɪᴘʜᴇʀX Suᴩᴇr Tᴇᴄhnᴏlᴏgy Bᴏᴛ ✵",
+                            title=𐋏ᥱᥲrᴛᥣᥱss E᥊ᥴᥣᥙsi᥎ᥱ B᧐ᴛ",
                             text=txt,
-                            description="(c) CɪᴘʜᴇʀX",
+                            description="⚡️ @DarkPentester",
                             buttons=btn,
                             link_preview=False,
                         )
@@ -709,10 +709,10 @@ async def ibuild(e):
                     cont = InputWebDocument(pic, 0, mime_type, [])
                 results = [
                     await builder.article(
-                        title="✵ CɪᴘʜᴇʀX Suᴩᴇr Tᴇᴄhnᴏlᴏgy Bᴏᴛ ✵",
+                        title="𐋏ᥱᥲrᴛᥣᥱss E᥊ᥴᥣᥙsi᥎ᥱ B᧐ᴛ",
                         type=_type,
                         text=txt,
-                        description="(c) CɪᴘʜᴇʀX",
+                        description="⚡️ @DarkPentester",
                         include_media=include_media,
                         buttons=btn,
                         thumb=cont,
@@ -724,7 +724,7 @@ async def ibuild(e):
         except Exception as er:
             LOGS.exception(er)
     result = [
-        await builder.article("✵ CɪᴘʜᴇʀX Suᴩᴇr Tᴇᴄhnᴏlᴏgy Bᴏᴛ ✵", text=txt, link_preview=False, buttons=btn)
+        await builder.article("𐋏ᥱᥲrᴛᥣᥱss E᥊ᥴᥣᥙsi᥎ᥱ B᧐ᴛ", text=txt, link_preview=False, buttons=btn)
     ]
     await e.answer(result)
 
