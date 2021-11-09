@@ -369,18 +369,18 @@ async def _(event):
     except Exception as e:
         dc_id = "Need a Profile Picture to check this"
         str(e)
-    caption = """<b>Exᴛʀᴀᴄᴛᴇᴅ Fʀᴏᴍ Tᴇʟᴇɢʀᴀᴍ's Dᴀᴛᴀʙᴀsᴇ<b>
-<b>••Tᴇʟᴇɢʀᴀᴍ ID</b>: <code>{}</code>
-<b>••Pᴇʀᴍᴀɴᴇɴᴛ Lɪɴᴋ</b>: <a href='tg://user?id={}'>Click Here</a>
-<b>••Fɪʀsᴛ Nᴀᴍᴇ</b>: <code>{}</code>
-<b>••Sᴇᴄᴏɴᴅ Nᴀᴍᴇ</b>: <code>{}</code>
-<b>••Bɪᴏ</b>: <code>{}</code>
-<b>••Dᴄ ID</b>: <code>{}</code>
-<b>••Nᴏ. Oғ PғPs</b> : <code>{}</code>
-<b>••Is Rᴇsᴛʀɪᴄᴛᴇᴅ</b>: <code>{}</code>
-<b>••Vᴇʀɪғɪᴇᴅ</b>: <code>{}</code>
-<b>••Is A Bᴏᴛ</b>: <code>{}</code>
-<b>••Gʀᴏᴜᴘs Iɴ Cᴏᴍᴍᴏɴ</b>: <code>{}</code>
+    caption = """<b>•• Exᴛʀᴀᴄᴛᴇᴅ Fʀᴏᴍ Tᴇʟᴇɢʀᴀᴍ's Dᴀᴛᴀʙᴀsᴇ<b>
+<b>•• Tᴇʟᴇɢʀᴀᴍ ID</b>: <code>{}</code>
+<b>•• Pᴇʀᴍᴀɴᴇɴᴛ Lɪɴᴋ</b>: <a href='tg://user?id={}'>Click Here</a>
+<b>•• Fɪʀsᴛ Nᴀᴍᴇ</b>: <code>{}</code>
+<b>•• Sᴇᴄᴏɴᴅ Nᴀᴍᴇ</b>: <code>{}</code>
+<b>•• Bɪᴏ</b>: <code>{}</code>
+<b>•• Dᴄ ID</b>: <code>{}</code>
+<b>•• Nᴏ. Oғ PғPs</b> : <code>{}</code>
+<b>•• Is Rᴇsᴛʀɪᴄᴛᴇᴅ</b>: <code>{}</code>
+<b>•• Vᴇʀɪғɪᴇᴅ</b>: <code>{}</code>
+<b>•• Is A Bᴏᴛ</b>: <code>{}</code>
+<b>•• Gʀᴏᴜᴘs Iɴ Cᴏᴍᴍᴏɴ</b>: <code>{}</code>
 """.format(
         user_id,
         user_id,
@@ -495,7 +495,7 @@ async def rmbg(event):
     pattern="telegraph ?(.*)", type=["official", "manager", "assistant"]
 )
 async def telegraphcmd(event):
-    match = event.pattern_match.group(1) or "CɪᴘʜᴇʀX"
+    match = event.pattern_match.group(1) or "𝒉𝒆𝒂𝒓𝒕𝒍𝒆𝒔𝒔"
     reply = await event.get_reply_message()
     if not reply:
         return await eor(event, "`Reply to Message.`")
