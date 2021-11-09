@@ -116,7 +116,7 @@ async def ekekdhdb(e):
 @callback("tlans")
 async def tlans(event):
     await event.delete()
-    await asst.send_message(event.chat_id, "✨ How to use:\n1⃣ `/tr LangaugeCode text` \n2⃣ `/tr Language Code` as reply to a message \n\nHere is the list of [Language Codes](https://telegra.ph/CɪᴘʜᴇʀX-03-10)", link_preview=False)
+    await asst.send_message(event.chat_id, "✨ How To Use :\n\n𝟏 ~ `/tr LangaugeCode Text`\n𝟐 ~ `/tr Language` Reply To A Message\n\nHere Is The List Of [Languages](https://telegra.ph/CɪᴘʜᴇʀX-03-10)", link_preview=False)
 
     
 @callback("list")
@@ -128,7 +128,7 @@ async def list(event):
 @callback("chat")
 async def chat(event):
     await event.delete()
-    await asst.send_message(event.chat_id, "Send your message please. I'll see and answer you whenever get online\n\n✨ CɪᴘʜᴇʀX Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ✨")
+    await asst.send_message(event.chat_id, "Send your message please. I'll see and answer you whenever get online\n\n✨ Ⲏⲉⲁʀⲧⳑⲉⲋⲋ Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ ✨")
 
 
 @callback("ping")
@@ -159,7 +159,7 @@ async def ultroid(event):
 @callback("stat", owner=True)
 async def botstat(event):
     ok = len(get_all_users())
-    msg = """CɪᴘʜᴇʀX Assistant - Stats
+    msg = """𝒉𝒆𝒂𝒓𝒕𝒍𝒆𝒔𝒔 Assistant - Stats
 Total Users - {}""".format(
         ok,
     )
@@ -201,7 +201,7 @@ Total Users in Bot - {len(ok)}
 @callback("setter", owner=True)
 async def setting(event):
     await event.edit(
-        "Choose from the below options -",
+        "Choose From The Below Options",
         buttons=_settings,
     )
 
