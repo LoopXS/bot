@@ -239,7 +239,7 @@ async def choose_cata(event):
                     close_period=int(in_),
                 ),
                 correct_answers=[ansi],
-                solution="✵ CɪᴘʜᴇʀX Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ ✵",
+                solution="𐋏ᥱᥲrᴛᥣᥱss E᥊ᥴᥣᥙsi᥎ᥱ B᧐ᴛ",
                 solution_entities=[],
             )
             m_ = await event.client.send_message(chat, file=poll)
