@@ -62,6 +62,7 @@ async def ultroid(event):
                 ok = "✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵"
             await event.reply(
                 f"Hey [{get_display_name(u)}](tg://user?id={u.id}), I'M Assistant OF [𝒉𝒆𝒂𝒓𝒕𝒍𝒆𝒔𝒔](https://t.me/DarkPentester)",
+                link_preview=False,
                 file=udB.get("STARTMEDIA"),
                 buttons=[
                     [
