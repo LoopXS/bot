@@ -61,26 +61,17 @@ async def ultroid(event):
             if udB.get("PMBOT") == "True":
                 ok = "✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵"
             await event.reply(
-                f"Ⲏⲉⲩ [{get_display_name(u)}](tg://user?id={u.id}), ⲧⲏⲓⲋ ⲓⲋ Ⲋυⲣⲉʀ Ⲧⲉⲥⲏⲛⲟⳑⲟⳋⲩ Ⲁⲋⲋⲓⲋⲧⲁⲛⲧ ⲟϝ {ultroid_bot.me.first_name}!\n\n{ok}",
+                f"Hey [{get_display_name(u)}](tg://user?id={u.id}), I'M Assistant OF [𝒉𝒆𝒂𝒓𝒕𝒍𝒆𝒔𝒔](https://t.me/DarkPentester)",
                 file=udB.get("STARTMEDIA"),
                 buttons=[
                     [
-                        Button.url("✵Jᴏin Chᴀnnᴇl✵", url="https://t.me/FutureTechnologyOfficial"),
+                        Button.inline("ᴄʜᴀᴛ ᴡɪᴛʜ ʜᴇᴀʀᴛʟᴇꜱꜱ", data="chat"),
                     ],
                     [
-                        Button.inline("✵Chᴀᴛ wiᴛh CɪᴘʜᴇʀX✵", data="chat"),
+                        Button.inline("ꜱᴇʀᴠᴇʀ ᴘɪɴɢ", data="ping"),
                     ],
                     [
-                        Button.inline("✵Grᴏuᴩ/Chᴀnnᴇl ʍᴀnᴀgᴇr Hᴇlᴩ✵", data="group"),
-                    ],
-                    [
-                        Button.inline("✵CɪᴘʜᴇʀX Sᴇrvᴇr Ping✵", data="ping"),
-                    ],
-                    [
-                        Button.inline("✵Tᴇxᴛ Trᴀnslᴀᴛᴏr✵", data="tlans"),
-                    ],
-                    [
-                        Button.inline("✵CɪᴘʜᴇʀX Bᴏᴛs Lisᴛ✵", data="list"),
+                        Button.inline("ᴛᴇxᴛ ᴛʀᴀɴꜱʟᴀᴛᴏʀ", data="tlans"),
                     ],
                 ],
             )
@@ -92,22 +83,13 @@ async def ultroid(event):
                 file=udB.get("STARTMEDIA"),
                 buttons=[
                     [
-                        Button.url("✵Jᴏin Chᴀnnᴇl✵", url="https://t.me/FutureTechnologyOfficial"),
+                        Button.inline("ᴄʜᴀᴛ ᴡɪᴛʜ ʜᴇᴀʀᴛʟᴇꜱꜱ", data="chat"),
                     ],
                     [
-                        Button.inline("✵Chᴀᴛ wiᴛh CɪᴘʜᴇʀX✵", data="chat"),
+                        Button.inline("ꜱᴇʀᴠᴇʀ ᴘɪɴɢ", data="ping"),
                     ],
                     [
-                        Button.inline("✵Grᴏuᴩ/Chᴀnnᴇl ʍᴀnᴀgᴇr Hᴇlᴩ✵", data="group"),
-                    ],
-                    [
-                        Button.inline("✵CɪᴘʜᴇʀX Sᴇrvᴇr Ping✵", data="ping"),
-                    ],
-                    [
-                        Button.inline("✵Tᴇxᴛ Trᴀnslᴀᴛᴏr✵", data="tlans"),
-                    ],
-                    [
-                        Button.inline("✵CɪᴘʜᴇʀX Bᴏᴛs Lisᴛ✵", data="list"),
+                        Button.inline("ᴛᴇxᴛ ᴛʀᴀɴꜱʟᴀᴛᴏʀ", data="tlans"),
                     ],
                 ],
             )
@@ -115,7 +97,7 @@ async def ultroid(event):
         name = get_display_name(event.sender_id)
         if event.pattern_match.group(1) == "set":
             await event.reply(
-                "Choose from the below options -",
+                "Choose From The Below Options",
                 buttons=_settings,
             )
         else:
