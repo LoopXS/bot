@@ -1,23 +1,23 @@
 from . import *
 
 REPOMSG = """
-• **CɪᴘʜᴇʀX Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ** • 
+• **Ⲏⲉⲁʀⲧⳑⲉⲋⲋ Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ** • 
 """
 
 RP_BUTTONS = [
     [Button.url(get_string("bot_3"), "https://xhamsterlive.com")],
-    [Button.url("Ⲋυⲣⲣⲟʀⲧ", "t.me/FutureTechnologyOfficial")],
+    [Button.url("Ⲋυⲣⲣⲟʀⲧ", "https://t.me/DarkPentester")],
 ]
 
 BTS =[
     [
         Button.url("• Rⲉⲣⲟ •­", "https://xhamsterlive.com"), 
-        Button.url("• Ⲋυⲣⲣⲟʀⲧ •­", "t.me/FutureTechnologyOfficial"),
+        Button.url("• Ⲋυⲣⲣⲟʀⲧ •­", "https://t.me/DarkPentester"),
     ], 
 ]
  
 
-ULTSTRING = """🎇 **Thanks for Deploying CɪᴘʜᴇʀX Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ**
+ULTSTRING = """🎇 **Thanks for Deploying Ⲏⲉⲁʀⲧⳑⲉⲋⲋ Ⲉⲭⲥⳑυⲋⲓⳳⲉ Ⲃⲟⲧ**
 
 • Here, are the Some Basic stuff from, where you can Know, about its Usage."""
 
@@ -36,7 +36,7 @@ async def useUltroid(rs):
     msg = await asst.send_message(
         LOG_CHANNEL,
         ULTSTRING,
-        file="https://telegra.ph/file/167a0b85048b04129bd3b.jpg",
+        file="https://telegra.ph/file/8ee3430e4229363c57c9c.jpg",
         buttons=button,
     )
     await eor(rs, f"**[Click Here]({msg.message_link})**")
