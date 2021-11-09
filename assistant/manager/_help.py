@@ -5,9 +5,8 @@ START = """
 
 ✘  /start : Start the bot 
 ✘  /help : Get This Message.
-✘  /repo : Get Repo.
 
-🧑‍💻 Join **@FutureTechnologyOfficial**
+🧑‍💻 Support **@DarkPentester**
 """
 
 ADMINTOOLS = """✘ **AdminTools** ✘
@@ -86,16 +85,16 @@ def get_buttons():
             del keys[i]
         BTTS.append(BT)
     url = "https://t.me/" + asst.me.username + "?startgroup=true"
-    BTTS.append([Button.url("Add me to Group", url)])
+    BTTS.append([Button.url("Add Me To Group", url)])
     return BTTS
 
 
 @asst_cmd(pattern="help")
 async def helpish(event):
     if not event.is_private:
-        url = "https://t.me/CipherXBot?start=help"
+        url = "https://t.me/DarkPentesterBot?start=help"
         return await event.reply(
-            "Contact me in PM for help!", buttons=Button.url("Click me for Help", url)
+            "Contact Me In PM For Help!", buttons=Button.url("Click Me For Help", url)
         )
     if str(event.sender_id) in owner_and_sudos() and (
         udB.get("DUAL_MODE") and (udB.get("DUAL_HNDLR") == "/")
