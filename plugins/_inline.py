@@ -694,7 +694,7 @@ async def ibuild(e):
                     results = [
                         await builder.document(
                             _pic,
-                            title=𐋏ᥱᥲrᴛᥣᥱss E᥊ᥴᥣᥙsi᥎ᥱ B᧐ᴛ",
+                            title="𐋏ᥱᥲrᴛᥣᥱss E᥊ᥴᥣᥙsi᥎ᥱ B᧐ᴛ",
                             text=txt,
                             description="⚡️ @DarkPentester",
                             buttons=btn,
